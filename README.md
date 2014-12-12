@@ -68,8 +68,18 @@ $ git commit -m "修改READ.md文件"
 
 ###7、查看版本库中最新版本与工作区指定文件的区别(*git diff HEAD -- fileName*)
 <pre>
-
+$ git diff HEAD -- README.md 
+diff --git a/README.md b/README.md
+index 166a302..73f349e 100644
+--- a/README.md
++++ b/README.md
+@@ -83,3 +83,4 @@ To git@github.com:walker1988/test.git
+    15dffab..3f57873  master -> master
+ 
++have a try
 </pre>
+
+###8、撤销个性(*git *)
 
 ###8、将master分支的修改推送到远程仓库(*git push*)
 <pre>
@@ -83,3 +93,4 @@ To git@github.com:walker1988/test.git
    15dffab..3f57873  master -> master
 </pre>
 
+have a try
