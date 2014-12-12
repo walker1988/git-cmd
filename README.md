@@ -160,3 +160,45 @@ Total 3 (delta 0), reused 0 (delta 0)
 To git@github.com:walker1988/test.git
    15dffab..3f57873  master -> master
 </pre>
+
+###12、创建并切换分支(*git checkout -b branchName*)
+<pre>
+$ git checkout -b dev
+M	README.md
+Switched to a new branch 'dev'
+</pre>
+
+**git checkout -b branchName**相当于如下两条语句：
+
+- git branch branchName       创建分支
+- git checkout branchName     切换分支
+
+###13、查看当前分支(*git branch*)
+<pre>
+$ git branch
+* dev
+  master
+</pre>
+
+###14、切换会master分支(*git checkout master*)
+<pre>
+$ git checkout master
+M	README.md
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+</pre>
+
+###15、合并分支(*git merget branchName*)
+<pre>
+$ git merge dev
+Updating 5d1683a..9ce86b4
+Fast-forward
+ biz.log | 2 ++
+ 1 file changed, 2 insertions(+)
+$ cat biz.log 
+study git
+
+goodbye today.
+
+edit on branch dev.
+</pre>
