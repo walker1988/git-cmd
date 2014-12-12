@@ -180,7 +180,7 @@ $ git branch
   master
 </pre>
 
-###14、切换会master分支(*git checkout master*)
+###14、切换回master分支(*git checkout master*)
 <pre>
 $ git checkout master
 M	README.md
@@ -201,4 +201,11 @@ study git
 goodbye today.
 
 edit on branch dev.
+</pre>
+
+
+###16、删除分支(*git branch -d branchName*)
+<pre>
+$ git branch -d dev
+Deleted branch dev (was 9ce86b4).
 </pre>
