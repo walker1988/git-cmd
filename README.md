@@ -79,7 +79,51 @@ index 166a302..73f349e 100644
 +have a try
 </pre>
 
-###8、撤销个性(*git *)
+###8、撤销未提交到暂存区的修改，即个性文件后没有执行git add操作(*git checkout -- filename*)
+<pre>
+$ echo "goodbye today." > newfish.log 
+$ cat newfish.log 
+goodbye today.
+$ git checkout -- newfish.log 
+$ cat newfish.log 
+$ 
+</pre>
+
+###9、撤销已提交到暂存区但未提交到主分支的修改，即执行了git add，但尚未执行git commit(*git reset HEAD filename*)
+<pre>
+$ echo "goodbye today." > newfish.log 
+$ cat newfish.log 
+goodbye today.
+$ git add newfish.log 
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   newfish.log
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+$ git reset HEAD newfish.log 
+Unstaged changes after reset:
+M	README.md
+M	newfish.log
+$ cat newfish.log 
+goodbye today.
+$ git checkout -- newfish.log 
+$ cat newfish.log 
+</pre>
+
+###10、删除文件(*git rm filename*)
+<pre>
+
+</pre>
 
 ###8、将master分支的修改推送到远程仓库(*git push*)
 <pre>
