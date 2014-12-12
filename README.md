@@ -122,10 +122,34 @@ $ cat newfish.log
 
 ###10、删除文件(*git rm filename*)
 <pre>
+$ rm newfish.log 
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    newfish.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+$ git rm newfish.log
+rm 'newfish.log'
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    newfish.log
 
 </pre>
 
-###8、将master分支的修改推送到远程仓库(*git push*)
+###11、将master分支的修改推送到远程仓库(*git push*)
 <pre>
 $ git push
 Counting objects: 5, done.
@@ -136,5 +160,3 @@ Total 3 (delta 0), reused 0 (delta 0)
 To git@github.com:walker1988/test.git
    15dffab..3f57873  master -> master
 </pre>
-
-have a try
