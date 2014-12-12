@@ -58,7 +58,7 @@ Changes to be committed:
 	modified:   README.md
 </pre>
 
-###6、将暂存区的文件修改提交到master分支(*git commit -m ""*)
+###6、将暂存区的文件修改提交到master分支(*git commit -m "remark"*)
 <pre>
 $ git commit -m "修改READ.md文件"
 [master 3f57873] 修改READ.md文件
@@ -66,12 +66,12 @@ $ git commit -m "修改READ.md文件"
  rewrite README.md (78%)
 </pre>
 
-###7、查看版本库中最新版本与工作区指定文件的区别(*git diff filename -- HEAD*)
+###7、查看版本库中最新版本与工作区指定文件的区别(*git diff HEAD -- fileName*)
 <pre>
 
 </pre>
 
-###7、将master分支的修改推送到远程仓库(*git push*)
+###8、将master分支的修改推送到远程仓库(*git push*)
 <pre>
 $ git push
 Counting objects: 5, done.
