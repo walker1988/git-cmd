@@ -1,6 +1,22 @@
 git命令的基本用法
 ===============
-###1、从远程库克隆项目(*git clone*)
+>工作区：本地库目录
+
+>版本库：本地库目录中的.git目录
+
+>暂存区
+
+>master分支
+
+>HEAD：指向master分支的指针
+
+###1、配置全局用户名和邮箱
+<pre>
+$ git config --global user.name "walker"
+$ git config --global user.email "walker@163.com"
+</pre>
+
+###2、从远程库克隆项目(*git clone*)
 <pre>
 $ git clone git@github.com:walker1988/test.git
 Cloning into 'test'...
@@ -10,7 +26,7 @@ Receiving objects: 100% (3/3), done.
 Checking connectivity... done.
 </pre>
 
-###2、查看本地库的状态(*git status*)
+###3、查看本地工作区的状态(*git status*)
 <pre>
 $ git status
 On branch master
@@ -25,12 +41,12 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 </pre>
 
-###3、将文件添加到仓库(*git add filename*)
+###4、将文件修改添加到暂存区(*git add filename*)
 <pre>
 $ git add README.md 
 </pre>
 
-###4、再次查看本地库状态(*git status*)
+###5、再次查看本地工作区的状态(*git status*)
 <pre>
 $ git status
 On branch master
@@ -42,7 +58,7 @@ Changes to be committed:
 	modified:   README.md
 </pre>
 
-###5、将文件提交到本地仓库(*git commit -m ""*)
+###6、将暂存区的文件修改提交到master分支(*git commit -m ""*)
 <pre>
 $ git commit -m "修改READ.md文件"
 [master 3f57873] 修改READ.md文件
@@ -50,8 +66,12 @@ $ git commit -m "修改READ.md文件"
  rewrite README.md (78%)
 </pre>
 
+###7、查看版本库中最新版本与工作区指定文件的区别(*git diff filename -- HEAD*)
+<pre>
 
-###6、将修改推送到远程仓库(*git push*)
+</pre>
+
+###7、将master分支的修改推送到远程仓库(*git push*)
 <pre>
 $ git push
 Counting objects: 5, done.
