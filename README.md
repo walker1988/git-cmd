@@ -261,6 +261,27 @@ $ git pull
 Already up-to-date.
 </pre>
 
-###21、创建标签(*git tag *)
+###21、创建标签(*git tag tagName*)
 <pre>
+$ git tag v1.0
+</pre>
+
+###22、查看标签(*git tag*)
+<pre>
+$ git tag
+v1.0
+</pre>
+
+###23、删除标签(*git tag -d tagName*)
+<pre>
+$ git tag -d v1.0
+Deleted tag 'v1.0' (was c76f6c1)
+</pre>
+
+###24、推送标签到远程库(*git push origin tagName*)
+<pre>
+$ git push origin v1.0
+Total 0 (delta 0), reused 0 (delta 0)
+To git@github.com:walker1988/git-cmd.git
+ * [new tag]         v1.0 -> v1.0
 </pre>
