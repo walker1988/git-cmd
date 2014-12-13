@@ -254,3 +254,13 @@ Total 3 (delta 0), reused 0 (delta 0)
 To git@github.com:walker1988/git-cmd.git
  * [new branch]      dev -> dev
 </pre>
+
+###20、拉取分支(*git pull*)
+<pre>
+$ git pull
+Already up-to-date.
+</pre>
+
+###21、创建标签(*git tag *)
+<pre>
+</pre>
