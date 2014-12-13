@@ -285,3 +285,12 @@ Total 0 (delta 0), reused 0 (delta 0)
 To git@github.com:walker1988/git-cmd.git
  * [new tag]         v1.0 -> v1.0
 </pre>
+
+###25、删除远程库中的标签(*git push origin :refs/tags/tagName*)
+<pre>
+$ git tag -d v1.0                         //先删除本地标签
+Deleted tag 'v1.0' (was c76f6c1)
+$ git push origin :refs/tags/v1.0         //再推送到远程库删除
+To git@github.com:walker1988/git-cmd.git
+ - [deleted]         v1.0
+</pre>
