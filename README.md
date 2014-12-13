@@ -294,3 +294,10 @@ $ git push origin :refs/tags/v1.0         //再推送到远程库删除
 To git@github.com:walker1988/git-cmd.git
  - [deleted]         v1.0
 </pre>
+
+###26、删除远程分支(*git push origin :branchName*)
+<pre>
+$ git push origin :tmp
+To git@github.com:walker1988/git-cmd.git
+ - [deleted]         tmp
+</pre>
