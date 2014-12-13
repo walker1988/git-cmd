@@ -203,9 +203,32 @@ goodbye today.
 edit on branch dev.
 </pre>
 
-
 ###16、删除分支(*git branch -d branchName*)
 <pre>
 $ git branch -d dev
 Deleted branch dev (was 9ce86b4).
+</pre>
+
+
+###17、查看git日志(*git log*)
+<pre>
+$ git log --graph --pretty=oneline --abbrev-commit
+*   f0fd8bb merge branch
+|\  
+| * c91a580 edit feature1
+* | a8d7204 edit master
+|/  
+* 0139198 tomorrow again
+* d982db5 add branch
+* 9ce86b4 alter branch dev
+* 5d1683a add a line
+* 0fe34ea add biz.log
+* eeb7b8b all for local
+* e5fe554 add 10 item
+* ea1454b alter 7
+* 24f5cc4 alter tag
+* 9a1e33b 修改文件
+* ec59216 add 1-6 items
+* 17eb1ae have a try
+* 890bf12 Initial commit
 </pre>
