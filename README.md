@@ -232,3 +232,25 @@ $ git log --graph --pretty=oneline --abbrev-commit
 * 17eb1ae have a try
 * 890bf12 Initial commit
 </pre>
+
+###18、查看远程库信息(*git remote*)
+<pre>
+$ git remote
+origin
+</pre>
+
+###19、推送分支(*git push origin branchName*)
+<pre>
+$ git commit -m "add dev.log"
+[dev d072777] add dev.log
+ 1 file changed, 1 insertion(+)
+ create mode 100644 dev.log
+the-way:git-cmd walker$ git push origin dev
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 326 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:walker1988/git-cmd.git
+ * [new branch]      dev -> dev
+</pre>
